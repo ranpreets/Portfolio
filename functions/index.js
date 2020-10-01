@@ -2,8 +2,10 @@ const functions = require('firebase-functions');
 
 
 
-exports.helloGET = (req, res) => {
-  res.send('This is a  Trigger');
+exports.hello = functions.https.onRequest((req, res) => {
+  console.log(req.query.name);
+  var name =req.query.name || "Unknow"
+  res.send("Hello" + name);
 };
 
 

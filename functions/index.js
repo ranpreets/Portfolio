@@ -3,7 +3,7 @@ const functions = require('firebase-functions');
 
 
 exports.helloGET = (req, res) => {
-  res.send('Hello World!');
+  res.send('This is a  Trigger');
 };
 
 
